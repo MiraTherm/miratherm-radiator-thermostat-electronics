@@ -617,6 +617,10 @@
     [
       "1ab1902b-acf7-4c4c-8c09-61d5cb12072a",
       "HMI"
+    ],
+    [
+      "d98c736e-7552-409d-af25-f5fe8dce0887",
+      "Microcontroller"
     ]
   ],
   "text_variables": {}

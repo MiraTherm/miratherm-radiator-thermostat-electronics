@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "698aa3d0-b253-4472-a858-82aabe321d8a")
+	(uuid "b6cd7838-fa81-438c-b737-b4c11045ff67")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Custom_Parts:RotaryEncoder_Switch_4P"
