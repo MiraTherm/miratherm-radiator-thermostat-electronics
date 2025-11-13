@@ -52,6 +52,48 @@
 		)
 	)
 	(sheet
+		(at 187.325 36.83)
+		(size 27.94 40.005)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "89e6ea21-7a60-4e98-9e90-22537fd40aae")
+		(property "Sheetname" "Sensors and Drivers"
+			(at 187.325 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sensors_and_drivers.kicad_sch"
+			(at 187.325 77.4196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "mt-rt"
+				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 55.245 36.83)
 		(size 47.625 56.515)
 		(exclude_from_sim no)

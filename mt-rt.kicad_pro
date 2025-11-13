@@ -621,6 +621,10 @@
     [
       "d98c736e-7552-409d-af25-f5fe8dce0887",
       "Microcontroller"
+    ],
+    [
+      "89e6ea21-7a60-4e98-9e90-22537fd40aae",
+      "Sensors and Drivers"
     ]
   ],
   "text_variables": {}

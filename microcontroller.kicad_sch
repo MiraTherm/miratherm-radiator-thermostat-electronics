@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "eaca6f41-f2f8-4ae9-bd76-01a0e1b50a14")
+	(uuid "edadbdc4-87d4-4ad9-bce3-34cdf87d96ef")
 	(paper "A4")
 	(lib_symbols
 		(symbol "MCU_ST_STM32WB:STM32WB55RGVx"
