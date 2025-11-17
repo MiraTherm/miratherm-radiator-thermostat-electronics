@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "7893c8b0-1611-40b1-a2bf-231afa300f71")
+	(uuid "d8b95f48-4783-41d0-b090-81e33b12ca92")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x07"
@@ -813,7 +813,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND2"
+		(symbol "Device:Crystal_GND24"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -822,19 +822,21 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 0 5.715 0)
+				(at 3.175 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND2"
-				(at 0 3.81 0)
+			(property "Value" "Crystal_GND24"
+				(at 3.175 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -855,7 +857,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Three pin crystal, GND on pin 2"
+			(property "Description" "Four pin crystal, GND on pins 2 and 4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -882,10 +884,22 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND2_0_1"
+			(symbol "Crystal_GND24_0_1"
 				(polyline
 					(pts
-						(xy -2.54 0) (xy -1.905 0)
+						(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -2.032 0)
 					)
 					(stroke
 						(width 0)
@@ -909,7 +923,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 -1.27) (xy -1.905 1.27)
+						(xy -2.032 -1.27) (xy -2.032 1.27)
 					)
 					(stroke
 						(width 0.508)
@@ -932,6 +946,18 @@
 				)
 				(polyline
 					(pts
+						(xy 0 3.556) (xy 0 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0 -3.81) (xy 0 -3.556)
 					)
 					(stroke
@@ -944,19 +970,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.905 1.27) (xy 1.905 -1.27)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 0) (xy 2.54 0)
+						(xy 2.032 0) (xy 2.54 0)
 					)
 					(stroke
 						(width 0)
@@ -966,8 +980,20 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 2.032 -1.27) (xy 2.032 1.27)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "Crystal_GND2_1_1"
+			(symbol "Crystal_GND24_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 1.27)
@@ -987,7 +1013,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 0 5.08 270)
 					(length 1.27)
 					(name "2"
 						(effects
@@ -997,6 +1023,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 1.27)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3401,6 +3445,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 86.36) (xy 68.58 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14be3b29-c49f-4725-86d9-0c7e3aefbf50")
+	)
+	(wire
+		(pts
 			(xy 39.37 88.9) (xy 39.37 93.98)
 		)
 		(stroke
@@ -3408,6 +3462,16 @@
 			(type default)
 		)
 		(uuid "1839f493-f935-4e1a-9822-88360bf1db56")
+	)
+	(wire
+		(pts
+			(xy 62.23 92.71) (xy 81.28 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a1b11cb-f17a-4caa-9595-42870ab36ed9")
 	)
 	(wire
 		(pts
@@ -3471,6 +3535,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 86.36) (xy 81.28 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27602e8a-920c-4a2a-9298-f4df9d1d3016")
+	)
+	(wire
+		(pts
 			(xy 133.35 109.22) (xy 139.7 109.22)
 		)
 		(stroke
@@ -3518,6 +3592,16 @@
 			(type default)
 		)
 		(uuid "2a904e9c-ecfe-4e26-a393-c392155ade33")
+	)
+	(wire
+		(pts
+			(xy 68.58 86.36) (xy 68.58 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b60da68-81ee-4415-b50c-911d46786e6f")
 	)
 	(wire
 		(pts
@@ -3681,6 +3765,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 86.36) (xy 81.28 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4803da09-a984-4789-a078-18587658e6dc")
+	)
+	(wire
+		(pts
 			(xy 250.19 67.31) (xy 251.46 67.31)
 		)
 		(stroke
@@ -3688,6 +3782,16 @@
 			(type default)
 		)
 		(uuid "495e6385-78bd-4919-b6de-700940eceaa8")
+	)
+	(wire
+		(pts
+			(xy 81.28 88.9) (xy 87.63 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c2daf59-8640-468a-a55a-a8164b43d9c9")
 	)
 	(wire
 		(pts
@@ -3781,6 +3885,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 86.36) (xy 58.42 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ecb7116-fba7-4b16-913d-74d9fb16d13a")
+	)
+	(wire
+		(pts
 			(xy 254 30.48) (xy 254 48.26)
 		)
 		(stroke
@@ -3798,6 +3912,16 @@
 			(type default)
 		)
 		(uuid "6136377f-68fb-438a-b4fc-d9206747033a")
+	)
+	(wire
+		(pts
+			(xy 62.23 91.44) (xy 62.23 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6235d0a8-b6f8-4e59-aa86-7b5e3b472b3f")
 	)
 	(wire
 		(pts
@@ -4021,6 +4145,26 @@
 	)
 	(wire
 		(pts
+			(xy 62.23 80.01) (xy 62.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a0abf94-1381-43ed-a99f-0c4e9d7b53ec")
+	)
+	(wire
+		(pts
+			(xy 81.28 80.01) (xy 62.23 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0b1b077-3104-4f18-af81-47ded5890738")
+	)
+	(wire
+		(pts
 			(xy 267.97 62.23) (xy 250.19 62.23)
 		)
 		(stroke
@@ -4168,6 +4312,16 @@
 			(type default)
 		)
 		(uuid "c35e02fc-6844-4ce4-88e8-426a272b9ab5")
+	)
+	(wire
+		(pts
+			(xy 81.28 92.71) (xy 81.28 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c36bd53a-ac20-440b-9cca-4ee2858e6fae")
 	)
 	(wire
 		(pts
@@ -4348,6 +4502,16 @@
 			(type default)
 		)
 		(uuid "e48ec0db-c458-4ec4-abdd-374be7dfdf2c")
+	)
+	(wire
+		(pts
+			(xy 54.61 87.63) (xy 54.61 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4ca8935-9214-47a2-b61a-5b5320633484")
 	)
 	(wire
 		(pts
@@ -5667,79 +5831,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND2")
-		(at 62.23 86.36 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ccb173e-9e33-4bc3-ae0b-c9cf82b6f1e0")
-		(property "Reference" "Y?"
-			(at 66.04 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Crystal_GND2"
-			(at 66.04 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Three pin crystal, GND on pin 2"
-			(at 62.23 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5eae0c7d-f6bd-4dcf-a00b-55b36aa6cf71")
-		)
-		(pin "1"
-			(uuid "eb37cfe7-c17a-40d0-bb71-9059fdfdcebe")
-		)
-		(pin "3"
-			(uuid "8bfe38d1-0969-4072-9b07-c8f65917a164")
-		)
-		(instances
-			(project ""
-				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
-					(reference "Y?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 73.66 36.83 0)
 		(unit 1)
@@ -6160,6 +6251,72 @@
 			(project ""
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
 					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 87.63 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9057c53a-e0a2-4406-9cf6-21bf99ee8b73")
+		(property "Reference" "#PWR018"
+			(at 54.61 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 51.816 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b72caefb-8aad-4eb5-9e64-729116293c76")
+		)
+		(instances
+			(project "mt-rt"
+				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -7010,6 +7167,154 @@
 			(project "mt-rt"
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal_GND24")
+		(at 62.23 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b70bc77a-e0e8-4e81-abf7-273616e1f7d3")
+		(property "Reference" "Y?"
+			(at 67.818 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Crystal_GND24"
+			(at 73.406 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom_Parts:CRYSTAL-SMD_4P"
+			(at 62.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 62.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LSCS" "C2965582"
+			(at 62.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6ab70c7f-92f1-491e-80d2-ad4439994637")
+		)
+		(pin "1"
+			(uuid "1cc93bf2-c35e-4f9b-8f4f-4069987cbcfa")
+		)
+		(pin "4"
+			(uuid "a5309ae5-c929-41b4-be06-03fbecfeb0a9")
+		)
+		(pin "3"
+			(uuid "0d505bfc-afe5-4223-bbb7-ad31d79dd70e")
+		)
+		(instances
+			(project ""
+				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
+					(reference "Y?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 68.58 87.63 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8a799c8-4489-41ae-b1b7-353982318d41")
+		(property "Reference" "#PWR019"
+			(at 68.58 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 71.628 89.662 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 68.58 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bd00371-0f99-42d0-8600-c39721ca551a")
+		)
+		(instances
+			(project "mt-rt"
+				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/d98c736e-7552-409d-af25-f5fe8dce0887"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
