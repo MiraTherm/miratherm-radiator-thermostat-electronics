@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "301347f9-72d0-44c4-b877-57d1ab63363a")
+	(uuid "5147630b-1451-4ca2-b193-8ffe8395139b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Custom_Parts:TMP102AIDRLR"
@@ -231,7 +231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "daa4ddc5-3633-412c-a949-4d8b41702f42")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -349,7 +349,7 @@
 		(instances
 			(project ""
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/89e6ea21-7a60-4e98-9e90-22537fd40aae"
-					(reference "U?")
+					(reference "U2")
 					(unit 1)
 				)
 			)

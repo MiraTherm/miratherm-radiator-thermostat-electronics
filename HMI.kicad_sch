@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "fb2520a0-cd69-4c20-aea4-a698cf8292dc")
+	(uuid "d08f39ef-0dac-4716-b5c3-155ca82c85a9")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Custom_Parts:HS180S10B_TFT_Display"
@@ -1256,7 +1256,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "120d40ca-1e1a-4c84-9206-fc9628976ec8")
-		(property "Reference" "LCD?"
+		(property "Reference" "LCD1"
 			(at 231.14 55.8799 0)
 			(effects
 				(font
@@ -1418,7 +1418,7 @@
 		(instances
 			(project ""
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/1ab1902b-acf7-4c4c-8c09-61d5cb12072a"
-					(reference "LCD?")
+					(reference "LCD1")
 					(unit 1)
 				)
 			)
@@ -1517,7 +1517,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82b0bb2a-3e8c-4c42-b342-3cdf55f42d00")
-		(property "Reference" "SW?"
+		(property "Reference" "SW2"
 			(at 69.85 93.3449 0)
 			(effects
 				(font
@@ -1637,7 +1637,7 @@
 		(instances
 			(project ""
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/1ab1902b-acf7-4c4c-8c09-61d5cb12072a"
-					(reference "SW?")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -1653,7 +1653,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "910cc2d5-adf4-4785-9230-bc00990948ed")
-		(property "Reference" "SW2"
+		(property "Reference" "SW3"
 			(at 71.12 121.2849 0)
 			(effects
 				(font
@@ -1773,7 +1773,7 @@
 		(instances
 			(project "mt-rt"
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/1ab1902b-acf7-4c4c-8c09-61d5cb12072a"
-					(reference "SW2")
+					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -1789,7 +1789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbe1d8f8-f27c-4919-9f83-dfa453ea55e7")
-		(property "Reference" "SW3"
+		(property "Reference" "SW4"
 			(at 71.12 147.9549 0)
 			(effects
 				(font
@@ -1909,7 +1909,7 @@
 		(instances
 			(project "mt-rt"
 				(path "/ee47f507-02e8-4ef5-a6d4-1ac4b2022b93/1ab1902b-acf7-4c4c-8c09-61d5cb12072a"
-					(reference "SW3")
+					(reference "SW4")
 					(unit 1)
 				)
 			)
