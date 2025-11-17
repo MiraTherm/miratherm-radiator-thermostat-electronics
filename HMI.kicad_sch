@@ -2,7 +2,7 @@
 	(version 20250114)
 	(generator "eeschema")
 	(generator_version "9.0")
-	(uuid "5be6109c-293a-41be-8d12-2d81f69dac31")
+	(uuid "5a7a74fa-59af-49c1-871b-455a1f0c8147")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Custom_Parts:HS180S10B_TFT_Display"
